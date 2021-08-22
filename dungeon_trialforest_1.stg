@@ -1,0 +1,1027 @@
+quest =
+{
+	questtilemap =
+	{
+		X_Size	= 3,
+		Y_Size	= 1,
+		row0 =
+		{
+			col0 =
+			{
+				Name	= "stage0",
+				StageNum	= 0,
+				D_Path	= 1,
+				Flag	= 1,
+			},
+			col1 =
+			{
+				Name	= "stage1",
+				StageNum	= 1,
+				D_Path	= 1,
+				Flag	= 0,
+			},
+			col2 =
+			{
+				Name	= "stage2",
+				StageNum	= 2,
+				D_Path	= 0,
+				Flag	= 2,
+			},
+		},
+	},
+	stage0 =
+	{
+		StageMap	= "trialforest_stage_01.lua",
+		StageBGM	= "",
+		Category0 =
+		{
+			CategoryName	= "Root",
+			Trigger0 =
+			{
+				TriggerName	= "Start_01",
+				TriggerComment	= "",
+				Active	= 1,
+				Use	= 1,
+				Event =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGGateObjectGennerater",
+						FuctionType	= 27,
+						FuctionDesc	= "[0] 번 게이트 슬롯에 [3000] Time Delay [오른쪽문 이동하는][시련의 숲] 게이트를 [오른쪽]방향으로 ([1748.000000],[119.580627]) 위치에  [생성합니다.]",
+						Repeat	= 1,
+						TG_ID	= 0,
+						On	= 0,
+						Right	= 1,
+						Generate	= 1,
+						Slot	= 0,
+						Type	= 2,
+						Direction	= 1,
+						DelayTime	= 3000,
+						EntranceX	= 1748.000000,
+						EntranceY	= 119.580627,
+						DotaStage	= 0,
+					},
+				Function1 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 [Lv.2][MON_ENT] 몬스터를 [보스] 로 [왼쪽]방향을 보며 ([1044.999878],[79.935471]) 위치에 생성합니다.",
+						Repeat	= 5,
+						TG_ID	= 43,
+						Right	= 0,
+						Boss	= 1,
+						Index	= 0,
+						Type	= 3,
+						Level	= 80,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 1044.999878,
+						EntranceY	= 79.935471,
+						NotCampion	= 0,
+					},
+				Function2 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 [Lv.2][MON_ENT] 몬스터를 [보스] 로 [왼쪽]방향을 보며 ([1044.999878],[79.935471]) 위치에 생성합니다.",
+						Repeat	= 5,
+						TG_ID	= 43,
+						Right	= 0,
+						Boss	= 1,
+						Index	= 1,
+						Type	= 3,
+						Level	= 80,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 1044.999878,
+						EntranceY	= 79.935471,
+						NotCampion	= 0,
+					},		
+				Function3 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 [Lv.2][MON_ENT] 몬스터를 [보스] 로 [왼쪽]방향을 보며 ([1044.999878],[79.935471]) 위치에 생성합니다.",
+						Repeat	= 5,
+						TG_ID	= 43,
+						Right	= 0,
+						Boss	= 1,
+						Index	= 2,
+						Type	= 3,
+						Level	= 80,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 1044.999878,
+						EntranceY	= 79.935471,
+						NotCampion	= 0,
+					},		
+				Function4 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 [Lv.2][MON_ENT] 몬스터를 [보스] 로 [왼쪽]방향을 보며 ([1044.999878],[79.935471]) 위치에 생성합니다.",
+						Repeat	= 5,
+						TG_ID	= 43,
+						Right	= 0,
+						Boss	= 1,
+						Index	= 3,
+						Type	= 3,
+						Level	= 80,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 1044.999878,
+						EntranceY	= 79.935471,
+						NotCampion	= 0,
+					},	
+				},
+				Condition =
+				{
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGLoading",
+						FuctionType	= 7,
+						FuctionDesc	= "[GC_GM_QUEST1] 로 로딩화면을 [종료] 합니다.",
+						Repeat	= 1,
+						TG_ID	= 2,
+						On	= 0,
+						LoadingID	= 10,
+					},
+					Function1 =
+					{
+						FuctionName	= "TGSoundOnOff",
+						FuctionType	= 6,
+						FuctionDesc	= "[TrackG.mp3] 의 음악을 [재생] 합니다.",
+						Repeat	= 0,
+						TG_ID	= 3,
+						On	= 1,
+						FileName	= "TrackG.mp3",
+					},
+					Function2 =
+					{
+						FuctionName	= "TGPlayerPosition",
+						FuctionType	= 13,
+						FuctionDesc	= "[0] 번 플레이어를 [오른쪽] 바라보는 상태로  ([257.999939],[99.677399]) 위치에 이동합니다.",
+						Repeat	= 0,
+						TG_ID	= 4,
+						Right	= 1,
+						PlayerIndex	= 0,
+						EntranceX	= 257.999939,
+						EntranceY	= 99.677399,
+					},
+					Function3 =
+					{
+						FuctionName	= "TGPlayerPosition",
+						FuctionType	= 13,
+						FuctionDesc	= "[1] 번 플레이어를 [오른쪽] 바라보는 상태로  ([192.999954],[97.645126]) 위치에 이동합니다.",
+						Repeat	= 0,
+						TG_ID	= 5,
+						Right	= 1,
+						PlayerIndex	= 1,
+						EntranceX	= 192.999954,
+						EntranceY	= 97.645126,
+					},
+					Function4 =
+					{
+						FuctionName	= "TGPlayerPosition",
+						FuctionType	= 13,
+						FuctionDesc	= "[2] 번 플레이어를 [오른쪽] 바라보는 상태로  ([127.999969],[99.870941]) 위치에 이동합니다.",
+						Repeat	= 0,
+						TG_ID	= 6,
+						Right	= 1,
+						PlayerIndex	= 2,
+						EntranceX	= 127.999969,
+						EntranceY	= 99.870941,
+					},
+					Function5 =
+					{
+						FuctionName	= "TGPlayerPosition",
+						FuctionType	= 13,
+						FuctionDesc	= "[3] 번 플레이어를 [오른쪽] 바라보는 상태로  ([73.999969],[98.806427]) 위치에 이동합니다.",
+						Repeat	= 0,
+						TG_ID	= 7,
+						Right	= 1,
+						PlayerIndex	= 3,
+						EntranceX	= 73.999969,
+						EntranceY	= 98.806427,
+					},
+					Function6 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Clear_01] 이름의 트리거를 [켭니다]",
+						Repeat	= 1,
+						TG_ID	= 8,
+						On	= 1,
+						TriggerName	= "Clear_01",
+					},
+					Function7 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Timer_01] 이름의 트리거를 [켭니다]",
+						Repeat	= 1,
+						TG_ID	= 9,
+						On	= 1,
+						TriggerName	= "Timer_01",
+					},
+				},
+			},
+			Trigger1 =
+			{
+				TriggerName	= "Clear_01",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+				},
+				Condition =
+				{
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGWin",
+						FuctionType	= 26,
+						FuctionDesc	= "[0] 번 오브젝트 슬롯에 있는 [OBJ_DOOR_0] [파괴가능상태] 상태로 변경 된다.",
+						Repeat	= 1,
+						TG_ID	= 10,
+						Slot	= 0,
+						Type	= 0,
+						State	= 1,
+						OBJType	= 0,
+					},
+				},
+			},
+			Trigger2 =
+			{
+				TriggerName	= "Timer_01",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+				},
+				Condition =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGTimer",
+						FuctionType	= 2,
+						FuctionDesc	= "[6000] m/s 타이머를 가동 시키며 [UI에 타이머를 표시하지 않습니다.]",
+						Repeat	= 1,
+						TG_ID	= 11,
+						IsUI	= 0,
+						Timer	= 6000,
+					},
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGWin",
+						FuctionType	= 26,
+						FuctionDesc	= "[0] 번 오브젝트 슬롯에 있는 [OBJ_DOOR_0] [파괴가능상태] 상태로 변경 된다.",
+						Repeat	= 1,
+						TG_ID	= 12,
+						Slot	= 0,
+						Type	= 0,
+						State	= 1,
+						OBJType	= 0,
+					},
+				},
+			},
+		},
+	},
+	stage1 =
+	{
+		StageMap	= "trialforest_stage_02.lua",
+		StageBGM	= "",
+		Category0 =
+		{
+			CategoryName	= "Root",
+			Trigger0 =
+			{
+				TriggerName	= "Start_02",
+				TriggerComment	= "",
+				Active	= 1,
+				Use	= 1,
+				Event =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGGateObjectGennerater",
+						FuctionType	= 27,
+						FuctionDesc	= "[0] 번 게이트 슬롯에 [3000] Time Delay [왼쪽문 이동하는][시련의 숲] 게이트를 [오른쪽]방향으로 ([163.999954],[77.903214]) 위치에  [생성합니다.]",
+						Repeat	= 1,
+						TG_ID	= 13,
+						On	= 0,
+						Right	= 1,
+						Generate	= 1,
+						Slot	= 0,
+						Type	= 2,
+						Direction	= 4,
+						DelayTime	= 3000,
+						EntranceX	= 163.999954,
+						EntranceY	= 77.903214,
+						DotaStage	= 0,
+					},
+					Function1 =
+					{
+						FuctionName	= "TGGateObjectGennerater",
+						FuctionType	= 27,
+						FuctionDesc	= "[1] 번 게이트 슬롯에 [3000] Time Delay [오른쪽문 이동하는][시련의 숲] 게이트를 [오른쪽]방향으로 ([1792.000000],[58.677399]) 위치에  [생성합니다.]",
+						Repeat	= 1,
+						TG_ID	= 14,
+						On	= 0,
+						Right	= 1,
+						Generate	= 1,
+						Slot	= 1,
+						Type	= 2,
+						Direction	= 1,
+						DelayTime	= 3000,
+						EntranceX	= 1792.000000,
+						EntranceY	= 58.677399,
+						DotaStage	= 0,
+					},
+					Function2 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 [Lv.2][MON_TRIALFOREST_DRAMA_GOBLIN] 몬스터를 [일반몬스터] 로 [왼쪽]방향을 보며 [100]%의 확률로, ([252],[48]) 위치에 생성합니다.",
+						Repeat	= 0,
+						TG_ID	= 15,
+						Right	= 0,
+						Boss	= 0,
+						Index	= 0,
+						Type	= 778,
+						Level	= 2,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 252.000000,
+						EntranceY	= 48.000000,
+						NotCampion	= 0,
+					},
+					Function3 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Check_Drama_Goblin] 이름의 트리거를 [켭니다]",
+						Repeat	= 0,
+						TG_ID	= 16,
+						On	= 1,
+						TriggerName	= "Check_Drama_Goblin",
+					},
+					Function4 =
+					{
+						FuctionName	= "TGDialogue",
+						FuctionType	= 18,
+						FuctionDesc	= "[Tiral_Forest_Potion_Guide] [다이얼로그를 표시합니다.]",
+						Repeat	= 0,
+						TG_ID	= 17,
+						Dialogue	= "Tiral_Forest_Potion_Guide",
+						OnOff	= 1,
+						SHOW_CHAR	= -1,
+					},
+				},
+				Condition =
+				{
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Guide_02_1] 이름의 트리거를 [켭니다]",
+						Repeat	= 1,
+						TG_ID	= 18,
+						On	= 1,
+						TriggerName	= "Guide_02_1",
+					},
+				},
+			},
+			Trigger1 =
+			{
+				TriggerName	= "Clear_02_1",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+				},
+				Condition =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGKillMaster",
+						FuctionType	= 1,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 있는 [MON_MUSHROOM] 몬스터가죽었음",
+						Repeat	= 0,
+						TG_ID	= 19,
+						MonIndex	= 0,
+						MonType	= 1,
+						MonKill	= 0,
+					},
+					Function1 =
+					{
+						FuctionName	= "TGKillMaster",
+						FuctionType	= 1,
+						FuctionDesc	= "[1] 번 몬스터 슬롯에 있는 [MON_MUSHROOM] 몬스터가죽었음",
+						Repeat	= 0,
+						TG_ID	= 20,
+						MonIndex	= 1,
+						MonType	= 1,
+						MonKill	= 0,
+					},
+					Function2 =
+					{
+						FuctionName	= "TGKillMaster",
+						FuctionType	= 1,
+						FuctionDesc	= "[2] 번 몬스터 슬롯에 있는 [MON_MUSHROOM] 몬스터가죽었음",
+						Repeat	= 0,
+						TG_ID	= 21,
+						MonIndex	= 2,
+						MonType	= 1,
+						MonKill	= 0,
+					},
+					Function3 =
+					{
+						FuctionName	= "TGKillMaster",
+						FuctionType	= 1,
+						FuctionDesc	= "[3] 번 몬스터 슬롯에 있는 [MON_MUSHROOM] 몬스터가죽었음",
+						Repeat	= 0,
+						TG_ID	= 22,
+						MonIndex	= 3,
+						MonType	= 1,
+						MonKill	= 0,
+					},
+					Function4 =
+					{
+						FuctionName	= "TGKillMaster",
+						FuctionType	= 1,
+						FuctionDesc	= "[4] 번 몬스터 슬롯에 있는 [MON_SLIME] 몬스터가죽었음",
+						Repeat	= 0,
+						TG_ID	= 23,
+						MonIndex	= 4,
+						MonType	= 0,
+						MonKill	= 0,
+					},
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGWin",
+						FuctionType	= 26,
+						FuctionDesc	= "[1] 번 오브젝트슬롯에 있는 [OBJ_DOOR_0] [파괴가능상태] 상태로 변경 된다.",
+						Repeat	= 1,
+						TG_ID	= 24,
+						Slot	= 1,
+						Type	= 0,
+						State	= 1,
+						OBJType	= 0,
+					},
+				},
+			},
+			Trigger2 =
+			{
+				TriggerName	= "Check_Drama_Goblin",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+				},
+				Condition =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGKillMaster",
+						FuctionType	= 1,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 있는 [MON_TRIALFOREST_DRAMA_GOBLIN] 몬스터가죽었음",
+						Repeat	= 0,
+						TG_ID	= 25,
+						MonIndex	= 0,
+						MonType	= 778,
+						MonKill	= 0,
+					},
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Second_Wave] 이름의 트리거를 [켭니다]",
+						Repeat	= 0,
+						TG_ID	= 26,
+						On	= 1,
+						TriggerName	= "Second_Wave",
+					},
+					Function1 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Guide_02] 이름의 트리거를 [켭니다]",
+						Repeat	= 1,
+						TG_ID	= 27,
+						On	= 1,
+						TriggerName	= "Guide_02",
+					},
+				},
+			},
+			Trigger3 =
+			{
+				TriggerName	= "Third_Wave",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+				},
+				Condition =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGTimer",
+						FuctionType	= 2,
+						FuctionDesc	= "[100] m/s 타이머를 가동 시키며 [UI에 타이머를 표시하지 않습니다.]",
+						Repeat	= 0,
+						TG_ID	= 28,
+						IsUI	= 0,
+						Timer	= 100,
+					},
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 [Lv.2][MON_MUSHROOM] 몬스터를 [일반몬스터] 로 [왼쪽]방향을 보며 [100]%의 확률로, ([550.000000],[557.000000]) 위치에 생성합니다.",
+						Repeat	= 0,
+						TG_ID	= 29,
+						Right	= 0,
+						Boss	= 0,
+						Index	= 0,
+						Type	= 1,
+						Level	= 2,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 550.000000,
+						EntranceY	= 557.000000,
+						NotCampion	= 0,
+					},
+					Function1 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[1] 번 몬스터 슬롯에 [Lv.2][MON_MUSHROOM] 몬스터를 [일반몬스터] 로 [왼쪽]방향을 보며 [100]%의 확률로, ([850],[57.000000]) 위치에 생성합니다.",
+						Repeat	= 0,
+						TG_ID	= 30,
+						Right	= 0,
+						Boss	= 0,
+						Index	= 1,
+						Type	= 1,
+						Level	= 2,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 850.000000,
+						EntranceY	= 57.000000,
+						NotCampion	= 0,
+					},
+					Function2 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[2] 번 몬스터 슬롯에 [Lv.2][MON_MUSHROOM] 몬스터를 [일반몬스터] 로 [왼쪽]방향을 보며 [100]%의 확률로, ([930],[357]) 위치에 생성합니다.",
+						Repeat	= 0,
+						TG_ID	= 31,
+						Right	= 0,
+						Boss	= 0,
+						Index	= 2,
+						Type	= 1,
+						Level	= 2,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 930.000000,
+						EntranceY	= 357.000000,
+						NotCampion	= 0,
+					},
+					Function3 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[3] 번 몬스터 슬롯에 [Lv.2][MON_MUSHROOM] 몬스터를 [일반몬스터] 로 [왼쪽]방향을 보며 [100]%의 확률로, ([1482],[379]) 위치에 생성합니다.",
+						Repeat	= 0,
+						TG_ID	= 32,
+						Right	= 0,
+						Boss	= 0,
+						Index	= 3,
+						Type	= 1,
+						Level	= 2,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 1482.000000,
+						EntranceY	= 379.000000,
+						NotCampion	= 0,
+					},
+					Function4 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[4] 번 몬스터 슬롯에 [Lv.2][MON_SLIME] 몬스터를 [일반몬스터] 로 [왼쪽]방향을 보며 [100]%의 확률로, ([1471],[57]) 위치에 생성합니다.",
+						Repeat	= 0,
+						TG_ID	= 33,
+						Right	= 0,
+						Boss	= 0,
+						Index	= 4,
+						Type	= 0,
+						Level	= 2,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 1471.000000,
+						EntranceY	= 57.000000,
+						NotCampion	= 0,
+					},
+					Function5 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Clear_02_1] 이름의 트리거를 [켭니다]",
+						Repeat	= 0,
+						TG_ID	= 34,
+						On	= 1,
+						TriggerName	= "Clear_02_1",
+					},
+				},
+			},
+			Trigger4 =
+			{
+				TriggerName	= "Guide_02",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+				},
+				Condition =
+				{
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TitleText",
+						FuctionType	= 16,
+						FuctionDesc	= "[12113] 스트링 번호를 을 화면에 표시합니다.",
+						Repeat	= 1,
+						TG_ID	= 35,
+						TitleTextStringID	= 12113,
+					},
+				},
+			},
+			Trigger5 =
+			{
+				TriggerName	= "Second_Wave",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 [Lv.2][MON_GOBLIN] 몬스터를 [일반몬스터] 로 [왼쪽]방향을 보며 [100]%의 확률로, ([930],[357]) 위치에 생성합니다.",
+						Repeat	= 0,
+						TG_ID	= 36,
+						Right	= 0,
+						Boss	= 0,
+						Index	= 0,
+						Type	= 4,
+						Level	= 2,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 930.000000,
+						EntranceY	= 357.000000,
+						NotCampion	= 0,
+					},
+				},
+				Condition =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGTimer",
+						FuctionType	= 2,
+						FuctionDesc	= "[100] m/s 타이머를 가동 시키며 [UI에 타이머를 표시하지 않습니다.]",
+						Repeat	= 0,
+						TG_ID	= 37,
+						IsUI	= 0,
+						Timer	= 100,
+					},
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Clear_02] 이름의 트리거를 [켭니다]",
+						Repeat	= 0,
+						TG_ID	= 38,
+						On	= 1,
+						TriggerName	= "Clear_02",
+					},
+				},
+			},
+			Trigger6 =
+			{
+				TriggerName	= "Guide_02_1",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+				},
+				Condition =
+				{
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TitleText",
+						FuctionType	= 16,
+						FuctionDesc	= "[12033] 스트링 번호를 을 화면에 표시합니다.",
+						Repeat	= 1,
+						TG_ID	= 39,
+						TitleTextStringID	= 12033,
+					},
+				},
+			},
+			Trigger7 =
+			{
+				TriggerName	= "Clear_02",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+				},
+				Condition =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGKillMaster",
+						FuctionType	= 1,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 있는 [MON_GOBLIN] 몬스터가죽었음",
+						Repeat	= 0,
+						TG_ID	= 40,
+						MonIndex	= 0,
+						MonType	= 4,
+						MonKill	= 0,
+					},
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Third_Wave] 이름의 트리거를 [켭니다]",
+						Repeat	= 0,
+						TG_ID	= 41,
+						On	= 1,
+						TriggerName	= "Third_Wave",
+					},
+				},
+			},
+		},
+	},
+	stage2 =
+	{
+		StageMap	= "trialforest_stage_03.lua",
+		StageBGM	= "",
+		Category0 =
+		{
+			CategoryName	= "Root",
+			Trigger0 =
+			{
+				TriggerName	= "Start_03",
+				TriggerComment	= "",
+				Active	= 1,
+				Use	= 1,
+				Event =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGGateObjectGennerater",
+						FuctionType	= 27,
+						FuctionDesc	= "[0] 번 게이트 슬롯에 [3000] Time Delay [왼쪽문 이동하는][시련의 숲] 게이트를 [오른쪽]방향으로 ([168.999969],[118.354843]) 위치에  [생성합니다.]",
+						Repeat	= 1,
+						TG_ID	= 42,
+						On	= 0,
+						Right	= 1,
+						Generate	= 1,
+						Slot	= 0,
+						Type	= 2,
+						Direction	= 4,
+						DelayTime	= 3000,
+						EntranceX	= 168.999969,
+						EntranceY	= 118.354843,
+						DotaStage	= 0,
+					},
+					Function1 =
+					{
+						FuctionName	= "TGMonsterGenerater",
+						FuctionType	= 4,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 [Lv.2][MON_ENT] 몬스터를 [보스] 로 [왼쪽]방향을 보며 ([1044.999878],[79.935471]) 위치에 생성합니다.",
+						Repeat	= 0,
+						TG_ID	= 43,
+						Right	= 0,
+						Boss	= 1,
+						Index	= 0,
+						Type	= 3,
+						Level	= 2,
+						PROBABILITY	= 100,
+						RANDOM	= 0,
+						EntranceX	= 1044.999878,
+						EntranceY	= 79.935471,
+						NotCampion	= 0,
+					},
+					Function2 =
+					{
+						FuctionName	= "TGDialogue",
+						FuctionType	= 18,
+						FuctionDesc	= "[Tiral_Forest_Boss_Start] [다이얼로그를 표시합니다.]",
+						Repeat	= 0,
+						TG_ID	= 44,
+						Dialogue	= "Tiral_Forest_Boss_Start",
+						OnOff	= 1,
+						SHOW_CHAR	= -1,
+					},
+				},
+				Condition =
+				{
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGSoundOnOff",
+						FuctionType	= 6,
+						FuctionDesc	= "[TrackH.mp3] 의 음악을 [재생] 합니다.",
+						Repeat	= 0,
+						TG_ID	= 45,
+						On	= 1,
+						FileName	= "TrackH.mp3",
+					},
+					Function1 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Clear_03] 이름의 트리거를 [켭니다]",
+						Repeat	= 1,
+						TG_ID	= 46,
+						On	= 1,
+						TriggerName	= "Clear_03",
+					},
+					Function2 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Guide_03] 이름의 트리거를 [켭니다]",
+						Repeat	= 1,
+						TG_ID	= 47,
+						On	= 1,
+						TriggerName	= "Guide_03",
+					},
+				},
+			},
+			Trigger1 =
+			{
+				TriggerName	= "Clear_03",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+				},
+				Condition =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGKillMaster",
+						FuctionType	= 1,
+						FuctionDesc	= "[0] 번 몬스터 슬롯에 있는 [MON_ENT] 몬스터가 제거된다.",
+						Repeat	= 0,
+						TG_ID	= 48,
+						MonIndex	= 0,
+						MonType	= 3,
+						MonKill	= 0,
+					},
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGTriggerOnOff",
+						FuctionType	= 9,
+						FuctionDesc	= "[Win_03] 이름의 트리거를 [켭니다]",
+						Repeat	= 0,
+						TG_ID	= 49,
+						On	= 1,
+						TriggerName	= "Win_03",
+					},
+				},
+			},
+			Trigger2 =
+			{
+				TriggerName	= "Win_03",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGDialogue",
+						FuctionType	= 18,
+						FuctionDesc	= "[Tiral_Forest_Boss_End] [다이얼로그를 표시합니다.]",
+						Repeat	= 0,
+						TG_ID	= 50,
+						Dialogue	= "Tiral_Forest_Boss_End",
+						OnOff	= 1,
+						SHOW_CHAR	= -1,
+					},
+				},
+				Condition =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGTimer",
+						FuctionType	= 2,
+						FuctionDesc	= "[275] m/s 타이머를 가동 시키며 [UI에 타이머를 표시하지 않습니다.]",
+						Repeat	= 1,
+						TG_ID	= 51,
+						IsUI	= 0,
+						Timer	= 275,
+					},
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGWin",
+						FuctionType	= 2,
+						FuctionDesc	= "게임에서 승리 하였습니다.",
+						Repeat	= 1,
+						TG_ID	= 52,
+					},
+				},
+			},
+			Trigger3 =
+			{
+				TriggerName	= "Guide_03",
+				TriggerComment	= "",
+				Active	= 0,
+				Use	= 1,
+				Event =
+				{
+				},
+				Condition =
+				{
+					Function0 =
+					{
+						FuctionName	= "TGTimer",
+						FuctionType	= 2,
+						FuctionDesc	= "[300] m/s 타이머를 가동 시키며 [UI에 타이머를 표시하지 않습니다.]",
+						Repeat	= 1,
+						TG_ID	= 53,
+						IsUI	= 0,
+						Timer	= 300,
+					},
+				},
+				Action =
+				{
+					Function0 =
+					{
+						FuctionName	= "TitleText",
+						FuctionType	= 16,
+						FuctionDesc	= "[12036] 스트링 번호를 을 화면에 표시합니다.",
+						Repeat	= 1,
+						TG_ID	= 54,
+						TitleTextStringID	= 12036,
+					},
+				},
+			},
+		},
+	},
+}
